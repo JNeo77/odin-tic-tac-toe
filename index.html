@@ -3,12 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Tic-Tac-Toe</title>
 </head>
 <body>
-  <div class="gameContainer">
-    <h1>Tic Tac Toe</h1>
+  <div class="header">
+    <h1>Tic-Tac-Toe</h1>
+    <div class="startPlay">
+      <form>
+        <div class="formField">
+          <label for="player1">Player 1</label>
+          <input type="text" id="player1" placeholder="Name" required>
+        </div>
+        
+        <div class="formField">
+          <label for="player2">Player 2</label>
+          <input type="text" id="player2" placeholder="Name" required>
+        </div>
+
+        <button type="submit">Let's Play!</button>
+      </form>
+    </div>
   </div>
+
+  <div class="announce">
+    <h2 class="announceHeader">Jim's Turn</h2>
+    <!-- <button type="button" class="dialogBtn">Play Again</button> -->
+  </div>
+
+  <div class="gameContainer">
+    <div class="box" data-row="0" data-column="0" id="box1"></div>
+    <div class="box" data-row="0" data-column="1" id="box2"></div>
+    <div class="box" data-row="0" data-column="2" id="box3"></div>
+    <div class="box" data-row="1" data-column="0" id="box4"></div>
+    <div class="box" data-row="1" data-column="1" id="box5"></div>
+    <div class="box" data-row="1" data-column="2" id="box6"></div>
+    <div class="box" data-row="2" data-column="0" id="box7"></div>
+    <div class="box" data-row="2" data-column="1" id="box8"></div>
+    <div class="box" data-row="2" data-column="2" id="box9"></div>
+  </div>
+
   <script src="scripts/script.js"></script>
 </body>
 </html>
