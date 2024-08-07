@@ -44,16 +44,17 @@ p, h1, h2, h3, h4, h5, h6 {
   --x-color: #179bae;
   --o-color: #ff8343;
   --header-line-color: #646464;
-  --modal-bg-color: #4158a6;
+  --message-color: #914f1e;
 }
 
-.announce {
+.message {
   display: flex;
+  flex-direction: column;
   gap: 1rem;
 }
 
-.announceHeader {
-  color: var(--header-line-color);
+.messageHeader {
+  color: var(--message-color);
 }
 
 button {
@@ -79,6 +80,18 @@ button {
 form {
   display: flex;
   gap: 1.5rem;
+}
+
+.startPlay {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.startPlay.hidden,
+.box.hidden,
+.playAgainBtn.hidden,
+.resetBtn.hidden {
+  display: none;
 }
 
 label {

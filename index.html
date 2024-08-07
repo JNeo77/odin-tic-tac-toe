@@ -13,7 +13,7 @@
   <div class="header">
     <h1>Tic-Tac-Toe</h1>
     <div class="startPlay">
-      <form>
+      <form id="playForm">
         <div class="formField">
           <label for="player1">Player 1</label>
           <input type="text" id="player1" placeholder="Name" required>
@@ -23,15 +23,17 @@
           <label for="player2">Player 2</label>
           <input type="text" id="player2" placeholder="Name" required>
         </div>
-
-        <button type="submit">Let's Play!</button>
       </form>
+      <button type="submit" class="playBtn" form="playForm">Let's Play!</button>
+    </div>
+    <div class="reset">
+      <button type="button" class="resetBtn hidden">Restart</button>
     </div>
   </div>
 
-  <div class="announce">
-    <h2 class="announceHeader">Jim's Turn</h2>
-    <!-- <button type="button" class="dialogBtn">Play Again</button> -->
+  <div class="message">
+    <h1 class="messageHeader"></h1>
+    <button type="button" class="playAgainBtn hidden">Play Again!</button>
   </div>
 
   <div class="gameContainer">
